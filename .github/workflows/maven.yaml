@@ -21,4 +21,4 @@ jobs:
         run: mvn -version
 
       - name: Build Project
-        run: mvn clean package
+        run: mvn -f .github/java-github-actions-demo/pom.xml clean package
