@@ -1,0 +1,14 @@
+---
+name: Student Workflow
+on:
+  push:
+jobs:
+  student-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Welcome Message
+        run: echo "Hello DevOps!"
+      - name: My Name is Anusha
+        run: echo "Learning GitHub Actions"
+      - name: This is my first workflow
+        run: echo "Learning GitHub Actions"
