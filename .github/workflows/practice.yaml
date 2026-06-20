@@ -1,0 +1,13 @@
+name: practice yaml
+on: 
+ push 
+jobs:
+  practice-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Welcome Message
+        run: echo "Hello DevOps!"
+      - name: Display Date
+        run: date
+      - name: Display Current Directory
+        run: pwd
