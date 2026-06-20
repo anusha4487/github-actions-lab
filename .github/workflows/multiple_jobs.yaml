@@ -1,0 +1,32 @@
+name: CI Pipeline
+
+on:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Build
+        run: echo "Building application..."
+
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Test
+        run: echo "Running tests..."
+
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy
+        run: echo "Deploying application..."
+
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Release
+        run: echo "Releasing application..."
